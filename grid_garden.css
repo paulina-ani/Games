@@ -1,0 +1,271 @@
+/* Grid garden game solutions (cssgridgarden.com) */
+
+/* Level 1 */
+#garden {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 3;	
+}
+/* Level 2 */
+#garden {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#poison {
+	grid-column-start: 5;
+                             
+}
+/* Level 3 */
+#garden {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 1;
+	grid-column-end: 4;                            
+}
+/* Be carefull - "grid-column-end: 4" means that last shape is the third */
+/* Level 4 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-column: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 5;
+	grid-column-end: 2;                             
+}
+/* Level 5 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 1;
+	grid-column-end: 5;                             
+}
+/* Level 6 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#poison {
+	grid-column-start: 4;                             
+}
+/* Level 7 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 2;
+	grid-column-end: 4;                             
+}
+/* Level 8 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 1;
+	grid-column-end: 6;                             
+}
+/* Level 9 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column-start: 3;
+	grid-column-end: 6;                             	
+}
+/* Level 10 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column: 4/6;                           
+}
+/* Level 11 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column: 2/5;                             
+}
+/* or: */
+#water {
+	grid-column: 2/ span 3;
+}
+/* Level 12 */
+#garden {
+	display: grid;
+	grid-template-column: 20% 20% 20% 20% 20%;
+	grid-template-row: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-row-start: 3;                             
+}
+/* Level 13 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-row: 3/ span 3;                             
+}
+/* Level 14 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#poison {
+	grid-row: 5 / 5;
+	grid-column: 2 / 2;
+                             
+}
+/* Level 15 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#garden {
+	grid-row: 1 / 6;
+	grid-column: 2 / 6;
+                             
+}
+/* Level 16 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+       grid-area: 1 / 2 / 4 / 6;                      
+}
+/* Level 17 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water-1 {
+          grid-area: 1 / 4 / 6 / 5;                   
+}
+#water-2 {
+	grid-area: 2 / 3 / 5 / 6;
+}
+/* Level 18 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	order: 0                             
+}
+# poison {
+	order: 3;
+}
+/* Level 19 */
+#garden {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+ 	order: 0;                            
+}
+#poison {
+	order: -1;
+}
+/* Level 20 */
+#garden {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column: 1;
+	grid-row: 1;
+                             
+}
+/* Level 21 */
+#garden {
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#water {
+	grid-column: 1;
+	grid-row: 1;                             
+}
+/* Level 22 */
+#garden {
+        display: grid;
+        grid-template-columns: 100px 3em 40%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+/* Level 23 */
+#garden {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+/* Level 24 */
+#garden {
+        display: grid;
+        grid-template-columns: 50 pf 1fr 1fr 1fr 50px;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+/* Level 25 */
+#garden {
+        display: grid;
+        grid-template-columns: 75px 3fr 2fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+/* Level 26 */
+#garden {
+        display: grid;
+        grid-template-columns: 50px 0 0 0 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+}
+/* Note that water is set to fill only the 5th row */
+#water {
+	grid-column: 1 / 6;
+	grid-row: 5 / 6;
+                             
+}
+/* Level 27 */
+#garden {
+        display: grid;
+        grid-template: 60% / 200px;
+}
+#water {
+	grid-column: 1;
+	grid-row: 1; 
+}
+/* Level 28 */
+#garden {
+        display: grid;
+        grid-template: 1fr 50px / 1fr 4fr;
+}
+
+
