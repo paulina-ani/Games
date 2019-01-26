@@ -46,4 +46,21 @@ CSS selectors:
 - A, B - comma combinators - combine selectors more than two
 - A* - selects all elements inside of A
 - A + B - -selects all B elements that directly follow A. Elements following one another are called siblings. They are on the same level, or depth
-
+- A~B - like the (A+B) selector except it gets all of the following elemens instead of none. Selects all B that follow A
+- A>B selects all B that are that are a direct children A
+- :first-child - selects all first child elements
+- :only-child - select any elements that is the only element inside of another one
+- :last-child- 
+- :nth-child(A) - Nth Child Pseudo-selector, A-number of child
+- :nth-last-child(A) - select the children from the bottom of the parent, e.g. :nth-last-child(2) - selects all second to last child
+- first-of-type- e.g. span:first-of-type - selects the first span in any elements
+- nth-of-type(A) - select a specific element based on its type and order in another element or even or odd. e.g. .example:nth-of-type(odd)
+- only-of-type - selects the elements that are the only ones of their type within their parent element
+-last-of-type
+- empty - selects elements that don't have any pther elements inside of them
+- not (X) - select all elements except selector "X"
+- [attribute] 
+- [attribute="value"]
+- [attribute^="value"]
+- [attribute$="value"]
+- [attribute*="value"]
